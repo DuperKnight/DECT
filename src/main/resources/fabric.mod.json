@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "dect",
+  "version": "${version}",
+  "name": "DECT",
+  "description": "Duper's Events Chat Tools",
+  "authors": ["DuperKnight"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/dect/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.duperknight.client.DectClient"
+    ],
+    "main": [
+      "com.duperknight.Dect"
+    ]
+  },
+  "mixins": [
+    "dect.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "fabric": "*",
+    "minecraft": ">=1.20"
+  }
+}
