@@ -1,6 +1,10 @@
 # DECT - Duper's Events Chat Tools
 Well, I hope yall have fun using this!
 
+## How it Works
+
+When a character is selected using `/character select <name>`, any subsequent chat messages you send will be intercepted. Instead of your normal message, a command like `/localbroadcast <distance> <speechStyle> <your message>` will be sent. The `<distance>` is taken from the mod's configuration (default is 20, configurable via `/character config distance set`).
+
 ## Commands
 
 The primary command for managing characters is `/character`.
@@ -51,8 +55,3 @@ Sets the broadcast distance for character messages.
 *   `<value>`: An integer representing the new broadcast distance (must be 1 or greater).
 
 **Example:** `/character config distance set 30`
-
-
-## How it Works
-
-When a character is selected using `/character select <name>`, any subsequent chat messages you send will be intercepted. Instead of your normal message, a command like `/localbroadcast <distance> <speechStyle> <your message>` will be sent. The `<distance>` is taken from the mod's configuration (default is 20, configurable via `/character config distance set`).
